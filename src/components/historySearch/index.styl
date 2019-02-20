@@ -1,0 +1,47 @@
+@import "../../styles/mixin.styl"
+$search-width = 680px
+.search {
+  wh(100%, auto)
+  align-items center
+  text-align right
+  padding 0 31px
+  box-sizing border-box
+  .noHistory{
+    width 100%
+  }
+  .search-box{
+    wh(100%,94px)
+    display flex
+    justify-content space-between
+  }
+  .search-history {
+    wh(100%,94px)
+    margin-top 28px
+    display flex
+    justify-content space-between
+    font-size 26px
+    align-self center
+    .search-history-img {
+      width 27px
+      height 27px
+    }
+    Text, Image{
+      align-self center
+    }
+  }
+  .search-items {
+    max-width $search-width
+    .search-history-font{
+      padding 0 40px
+      height 56px
+      line-height 56px
+      max-width 600px
+      margin-right 26px
+      margin-bottom 20px
+      background rgba(245, 245, 245, 1)
+      border-radius 28px
+      font-size  26px  
+      color  rgba(52, 52, 52, 1)  
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "./../../../styles/mixin.styl"
+.goods-list {
+  position relative
+  wh(100%,100%)
+  padding 35px 0 0 32px
+  box-sizing border-box
+  display flex
+  justify-content space-between
+  border-bottom 0.5px solid #EFEFEF
+  .goods-img {
+    wh(32%, 225px)
+    margin-right 48px
+  }
+  .goods-box {
+    wh(68%, auto)
+    .goods-name{
+      height 73px
+      line-height 36px
+    }
+    .common-font {
+      font-size 32px
+      color $color-yellow
+    }
+    .goods-box-font {
+      padding-right 30px
+      font-size 28px
+      color rgba(33, 33, 33, 1)
+    }
+    .goods-content-left {
+      display flex
+      wh(100%, auto)
+      justify-content space-between
+      .goods-content-price {
+        margin-top 22px
+        margin-bottom 5px
+        text-align left
+      }
+      .goods-content-font {
+        wh(310px, auto)
+        margin-top 13px
+        vertical-align bottom
+        height 30px
+        font-size 24px
+        color rgba(131, 131, 131, 1)
+        display flex
+        flex-direction row
+        Image {
+          margin-top 5px
+          margin-right 5px
+        }
+      }
+      .goods-img1 {
+        text-align right
+        wh(16px, 21px)
+      }
+      .goods-img2 {
+        wh(150px, 85px)
+        padding-top 18px
+        Image {
+          margin-left 60px
+          wh(54px, 54px)
+        }
+      }
+    }
+    .goods-content-right {
+      padding-top 13px
+      wh(100%, 70px)
+      display flex
+      justify-content space-between
+      .goods-content-font2 {
+        text-align left
+        vertical-align bottom
+        height 30px
+        font-size 24px
+        width 325px
+        color rgba(131, 131, 131, 1)
+      }
+      .goods-content-font1 {
+        text-align right
+        font-size 24px
+      }
+      .goods-content-btn{
+        padding-right 30px
+      }
+      .goods-content-shopName{
+        height 40px
+        overflow hidden
+      }
+    }
+  }
+}

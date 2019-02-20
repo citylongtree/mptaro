@@ -1,0 +1,65 @@
+@import "./../../styles/mixin.styl"
+.brand-list {
+  //background #F5F5F5
+  .brand-list-hot{
+    height 207px
+    width 100%
+    padding 24px 33px
+    .brand-list-top{
+      wh(100%, 60px)
+      display flex
+      font-size 30px
+      flex-direction row
+    }
+    .brand-list-left{
+      wh(6px,30px)
+      margin-right 20px
+      background-color $color-yellow
+    }
+    .brand-list-box{
+      display flex
+      flex-direction row
+    }
+  }
+  .brand-list-content{
+    width 100%
+    height 100vh
+    .brand-list-boxleft{
+      padding 0 33px
+      line-height 50px
+      font-size 24px
+      wh(100%, 50px)
+      background #F5F5F5
+    }
+    .brand-list-boxB{
+      wh(100%, auto)
+    }
+    .brand-list-imgbox1{
+      margin 0 33px
+      wh(auto, 160px)
+      display flex
+      align-items center
+      flex-direction row
+      font-size 28px
+      color rgba(33,33,33,1)
+      border-bottom  1px solid rgba(234,234,234,1)
+    }
+    .brand-list-imgbox1:last-child{
+      border-bottom  0 solid rgba(234,234,234,1)
+    }
+    .marginR-25{
+      margin-right 25px
+    }
+  }
+  //tupian
+  .brand-list-imgbox{
+    wh(104px, 104px)
+    border 1px solid rgba(188,188,188,1)
+    border-radius 34px
+    margin-right 43px
+    .brand-list-img{
+      wh(103px, 103px)
+      border-radius 34px
+    }
+  }
+}

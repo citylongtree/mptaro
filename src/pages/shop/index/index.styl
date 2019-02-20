@@ -1,0 +1,209 @@
+@import "../../../styles/mixin.styl"
+.shop-detail
+  wh(100%, 100%)
+  display flex
+  flex-direction column
+  .share-box
+    wh(100%, 100vh)
+    background rgba(0,0,0,.7)
+    position fixed
+    top 0
+    left 0
+    z-index 101
+    &-center
+      wh(100%, 953px)
+      display flex
+      flex-direction column
+      justify-content center
+      background-color #F3F3F3
+      position absolute
+      bottom 0
+      left 0
+      .share-box-top
+        display flex
+        flex-direction row
+        width 100%
+        text-align center
+        height 78px
+        line-height 78px
+        justify-content center
+        padding 0 100px
+        box-sizing border-box
+        &-text
+          flex 1
+          font-size $font-size-4
+          color #666666
+      &-img
+        display flex
+        flex 1
+        .shareImg
+          wh(540px, 700px)
+          display block
+          margin 0 auto
+      .share-box-bottom
+        wh(100%, 145px)
+        text-align center
+        &-btn
+          wh(260px,64px)
+          background-color #FF7700
+          color #fff
+          text-align center
+          line-height 64px
+          border-radius 32px
+          margin 0 auto
+          font-size 30px
+        &-text
+          width 100%
+          text-align center
+          line-height 72px
+          font-size 24px
+          color #6E6E6E
+  .header
+    wh(100%, 375px)
+    overflow hidden
+    position relative
+    .search
+      position absolute
+      wh(600px, 62px)
+      border-radius 31px
+      background rgba(255,255,255,.7)
+      padding-left 20px
+      top 20px
+      left 75px
+      overflow hidden
+      z-index 2
+      line-height 62px
+      color #adadad
+      font-size $font-size-5
+    .shop-image
+      wh(100%, 100%)
+  .center
+    width 100%
+    height auto
+    box-sizing border-box
+    .line
+      border-bottom 10px solid #e9e9e9
+    .shop-address
+      display flex
+      flex-direction row
+      align-items center
+      padding 20px 22px
+      .address
+        flex 1
+        display flex
+        flex-direction column
+        .shopName
+          width 100%
+          height auto
+          font-size 32px
+          line-height 52px
+        .shopAddress
+          width 100%
+          height auto
+          font-size $font-size-5
+          line-height 40px
+      .navigation
+        wh(81px, 82px)
+        border-left 1px solid #b3b3b3
+        background url("../../../imgs/icons/icon-fly.png") no-repeat center 5px
+        background-size 45px
+        padding-top 50px
+        box-sizing border-box
+        font-size 25px
+        line-height 30px
+        text-align center
+
+
+    .shop-goods
+      wh(100%, 320px)
+      padding 20px 6px 40px
+      box-sizing border-box
+      .shopGoods
+        wh(222px, 260px)
+        margin-left 16px
+        overflow hidden
+        float left
+        Image
+          display block
+          wh(100%, 220px)
+          border none
+        .shopGoods-name
+          display flex
+          wh(100%, 40px)
+          line-height 40px
+          color #e86f71
+          font-size 20px
+          background #eef2f6
+          font-weight bold
+  .recommended
+    display flex
+    flex-direction column
+    .recommended-title
+      wh(100%, auto)
+    .recommendGoods-list
+      width 100%
+      height: auto
+      display flex
+      flex-direction row
+      flex-wrap wrap
+      padding 0 25px 140px
+      box-sizing border-box
+      justify-content space-between
+  .button-content
+    position fixed
+    wh(650px, 80px)
+    border-radius 40px
+    overflow hidden
+    left 50px
+    bottom 45px
+    display flex
+    flex-direction row
+    font-size $font-size-5
+    color: #fff
+    line-height 80px
+    text-align center
+    .callShop
+      flex 1
+      background #ffc500
+    .buy
+      flex 1
+      background #fe6100
+  .right-share
+    wh(116px, auto)
+    padding 30px 0
+    position fixed
+    background #fff
+    bottom 180px
+    right 25px
+    border-radius 58px
+    box-shadow 1px 1px 15px #ccc
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    .goAppBtn
+      padding 0
+      border none
+      &::after
+        display none
+      &::before
+        display none
+    .goApp,.share,.goHome
+      width 100%
+      display flex
+      flex-direction column
+      text-align center
+      padding 10px 0
+      box-sizing border-box
+    .right-text
+      font-size $font-size-5
+      color #666
+      line-height 40px
+    .right-img
+      display block
+      wh(43px, 43px)
+      margin 0 auto
+
+  .line
+    border-bottom 10px solid #e9e9e9
+

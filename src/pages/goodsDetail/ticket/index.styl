@@ -1,0 +1,65 @@
+@import "./../../../styles/mixin.styl"
+.ticket{
+  background: #fff
+  color #fff
+  padding 10px
+  margin 7px 0
+  &-content{
+    display flex
+    &-img{
+      width 300px
+      height 130px
+      margin 10px
+      box-shadow:0 5px 20px 0 rgba(207,207,207,1);
+      .img{
+        width 222px
+        height 128px
+        display block
+        margin 0 auto
+      }
+    }
+    &-item{
+      flex 1
+      display flex
+      height 130px
+      min-width 218px
+      background:rgba(147,147,147,1);
+      margin 10px
+      text-align center
+      &-money{
+        flex 2
+        border-right 1px dashed #fff
+        .use{
+          font-size 65px
+          hl(80px,80px)
+          &-text{
+            position relative
+            &:after{
+              content '￥'
+              position absolute
+              top: -15px
+              left -15px
+              font-size 24px
+              color #fff
+            }
+          }
+        }
+        .limit{
+          font-size 20px
+        }
+      }
+      &-btn{
+        font-size 20px
+        writing-mode: vertical-lr;
+        .handel{
+          width 100%
+          text-align center
+          padding 0 15px
+        }
+      }
+    }
+    .active{
+      background:linear-gradient(0deg,rgba(255,60,65,1),rgba(245,95,58,1),rgba(253,78,19,1))
+    }
+  }
+}

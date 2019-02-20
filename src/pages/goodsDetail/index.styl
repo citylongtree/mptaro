@@ -1,0 +1,184 @@
+@import "../../styles/mixin.styl"
+.goods-detail{
+  background: $color-gray
+  padding-bottom 130px
+  .test-h{
+    height 710px
+  }
+  .item-img{
+    wh(100%,710px)
+    background: #fff
+  }
+  .goods-price{
+    font-size 40px
+    font-weight bold
+    text-indent 24px
+    background: $color-white
+    hl(88px,88px)
+    color $color-red
+  }
+  .goods-info{
+    margin 7px 0
+    background: $color-white
+    padding 24px 24px 0 24px
+    position relative
+    &-name{
+      width 620px
+      font-size 34px
+      overflow : hidden
+      text-overflow ellipsis
+      display -webkit-box
+      -webkit-line-clamp 2
+      -webkit-box-orient vertical
+    }
+    &-saleCnt{
+      font-size $font-size-5
+      color #989898
+      hl(88px,88px)
+    }
+    &-share{
+      position absolute
+      right 10px
+      top 25px
+      text-align center
+      width 100px
+      &-btn{
+        border none
+      }
+      .img{
+        display block
+        wh(52px,55px)
+        margin 0 auto
+      }
+      .text{
+        font-size 18px
+        color #696969FF
+        line-height:30px;
+      }
+      .money{
+        font-size:18px;
+        font-weight:400;
+        color:rgba(255,113,3,1);
+      }
+    }
+  }
+  .goods-handle{
+    background: $color-white
+    margin 7px 0
+    &-getTicket, &-choose{
+      padding 24px
+      font-size 30px
+      color $color-black
+      .icon{
+        float right
+        vertical-align middle
+      }
+    }
+    &-add{
+      font-size 30px
+      padding 50px 24px
+      .text{
+        padding-right 30px;
+        position relative;
+        top 10px
+      }
+    }
+  }
+  .detail-info{
+    img{
+      width 100%
+    }
+    &-title{
+      hl(100px,100px)
+      text-align center
+      font-size 38px
+      color $color-black
+      background: #ffffff
+    }
+  }
+  .shop-info{
+    padding 0 24px
+    height 180px
+    margin 7px 0
+    background: $color-white
+    display flex
+    align-items center
+    justify-content space-between
+    &-img{
+      wh(97px,99px)
+      .img{
+        border-radius:6px;
+        wh(97px,99px)
+      }
+    }
+    &-name{
+      width 340px
+      font-size $font-size-3
+      color $color-black
+      .name{
+        overflow : hidden
+        text-overflow ellipsis
+        display -webkit-box
+        -webkit-line-clamp 1
+        -webkit-box-orient vertical
+      }
+      .rel{
+        font-size 24px
+        color $color-black
+        hl(40px,40px)
+      }
+      .img{
+        wh(20px,23px)
+        vertical-align middle
+        padding-right 18px
+      }
+    }
+    &-go{
+      font-size 30px
+      color $color-black
+      line-height 180px
+      text-align right
+    }
+  }
+  .bottom-handles{
+    position fixed
+    bottom 0
+    z-index 100
+    wh(100%,130px)
+    background: $color-white
+    .icon-text{
+      width 110px
+      padding-top 20px
+      text-align center
+      font-size 24px
+      color #343434
+      .img{
+        width 41px
+        height 42px
+      }
+    }
+    .btn{
+      padding-top 12px
+      margin-left 45px
+      .btn-left,.btn-right{
+        display inline-block
+        width 227px
+        font-size $font-size-4
+        hl(88px,88px)
+        text-align center
+        color $color-white
+      }
+      .btn-left{
+        background: $color-primary
+        border-top-left-radius: 44px
+        border-bottom-left-radius: 44px
+      }
+      .btn-right{
+        background: #FF6100
+        color $color-white
+        border-top-right-radius: 44px
+        border-bottom-right-radius: 44px
+      }
+    }
+  }
+}

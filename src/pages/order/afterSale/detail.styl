@@ -1,0 +1,80 @@
+@import "../../../styles/mixin.styl"
+.refundDetail{
+    .refundDetail-text{
+        padding-left 23px
+        .refundState{
+            margin-top 37px
+            color #FF5000
+            font-size 34px
+            margin-bottom 22px
+        }
+        .group{
+            color #8E8E8E
+            font-size 28px
+            margin-bottom 21px
+        }
+        .refundMoney{
+            .only{
+                color #FF7200
+                display inline-block
+            }
+        }
+    }
+    .refundDetail-Main{
+        .orderMain{
+        overflow hidden
+        height 185px
+        margin-bottom 10px
+        .orderMainLeft{
+            width 178px
+            float left
+            .pic{
+            width 154px
+            height 154px
+            margin 14px 25px 17px 24px
+            }
+        }
+        .orderMainRight{
+            width 547px
+            float right
+            .orderMainRightT{
+                height 76px
+                .orderName{
+                    color #212121
+                    margin-top 14px
+                    float left
+                    font-size $font-size-4
+                    overflow hidden
+                    width 532px
+                    text-overflow ellipsis
+                    display -webkit-box
+                    -webkit-line-clamp 2
+                    -webkit-box-orient vertical
+                }
+            }
+            .orderMainRightD{
+                margin-top 38px
+                color #A2A2A2
+                .orderCnt{
+                    float left
+                    font-size 28px
+                    color #A2A2A2
+                }
+                .orderMoney{
+                    float right
+                    margin-right 24px
+                    color #FF7915
+                    font-size $font-size-5
+                    .Money{
+                        float left
+                        margin-right 10px   
+                    }
+                    .Number{
+                        float left
+                    }
+                }
+            }
+        }
+    }
+    }
+}

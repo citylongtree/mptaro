@@ -1,0 +1,79 @@
+
+
+$hd= 2;
+$input-number-btn-padding:=12px;
+$input-number-btn-padding-lg= 20px;
+$input-number-size-min:=80px;
+$input-number-size-min-lg= 120px;
+$font-size-xl= 18px * $hd; // 大标题
+$spacing-v-sm= 6px * $hd;
+$font-size-base= 14px * $hd; // 常用字号
+$border-radius-md= 4px * $hd;
+$color-bg= #FFF;
+$line-height-base= 1; // 单行
+$line-height-zh= 1.5; // 中文多行
+$color-text-disabled= #CCC;
+active() {
+  transition: background-color 0.3s;
+
+  &:active {
+    background-color: $color-grey-5;
+  }
+}
+
+
+
+.at-input-number {
+  display: inline-flex;
+  border 1px solid rgba(193,193,193,1);
+  font-size: $font-size-base;
+  border-radius: $border-radius-md;
+  background-color: $color-bg;
+  overflow: hidden;
+
+  &__btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: $input-number-btn-padding;
+    font-size: 0;
+    color: $color-brand;
+    text-align: center;
+    line-height: $line-height-base;
+    overflow: hidden;
+    active()
+  }
+
+  &__input {
+    display: inline-block;
+    width: $input-number-size-min;
+    height: auto;
+    border-radius: 0;
+    font-size: $font-size-base;
+    text-align: center;
+    line-height: $line-height-zh;
+    border-left  1px solid rgba(193,193,193,1);
+    border-right  1px solid rgba(193,193,193,1);
+  }
+
+  &--disabled {
+    color: $color-text-disabled;
+
+    &:active {
+      background-color: inherit;
+    }
+  }
+
+  &--lg {
+    .at-input-number__btn {
+      padding: $input-number-btn-padding-lg;
+      font-size: $font-size-xl;
+    }
+
+    .at-input-number__input {
+      padding: $spacing-v-sm;
+      font-size: $font-size-xl;
+    }
+  }
+}

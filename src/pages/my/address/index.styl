@@ -1,0 +1,187 @@
+@import "../../../styles/mixin.styl"
+$height = 200px
+.address {
+  min-height  100vh
+  .delButton {
+    text-align center
+  }
+  &-list {
+    border-bottom 1px solid #EFEFEF
+    height 200px
+    width 100vw
+    .address-box {
+      width 100vw
+      display flex
+      flex-direction row
+      align-items center
+
+      .address-img {
+        line-height $height
+        padding 0 24px
+      }
+      .address-image {
+        wh(36px, 36px)
+      }
+    }
+
+    .address-box1 {
+      width 500px
+      .address-font-top {
+        .address-font-left {
+          margin-right 20px
+          max-width 310px
+          display inline-block
+        }
+        font-size 32px
+        color rgba(52, 52, 52, 1)
+
+        .address-font-ccc {
+          font-size 26px
+          color #A3A2A2
+          max-width 170px
+          display inline-block
+        }
+      }
+      .address-font-bottom {
+        font-size 28px
+        margin-top 28px
+        color #343434
+        .default {
+          display inline-block
+          width 75px
+          height 32px
+          text-align center
+          background rgba(253, 243, 234, 1)
+          border-radius 4px
+          color $color-yellow
+          margin-right 30px
+        }
+      }
+    }
+    .address-img1 {
+      min-width calc(100vm - 600px)
+      line-height $height
+      height $height
+      padding 0 40px 0 80px
+    }
+    .address-image1 {
+      wh(31px, 31px)
+    }
+    .font-font {
+      margin-right 5px
+    }
+  }
+  &-box-bottom {
+    height 100px
+    display flex
+    justify-content space-between
+    font-size 32px
+    align-items center
+    color rgba(52, 52, 52, 1)
+    border-bottom 1px solid #eee
+    .address-add {
+      display flex
+      flex-direction row
+      width 400px
+    }
+    .address-img {
+      margin-top 13px
+      align-self center
+      padding 0 24px
+    }
+    .address-image {
+      wh(36px, 36px)
+      margin-right 20px
+    }
+    .address-box1 {
+      margin-left 10px
+    }
+    .address-ima {
+      wh(25px, 25px)
+      margin-right 33px
+    }
+  }
+  //编辑
+  .edit-address-box {
+    padding 0 30px
+    height 100px
+    padding-top 26px
+    box-sizing border-box
+    border-bottom 1px solid #EFEFEF
+  }
+  //城市选择
+  .address-select {
+    display flex
+    flex-direction row
+    align-items center
+    min-height 100px
+    padding 0 30px
+    border-bottom 1px solid #EFEFEF
+    .address-select1 {
+      min-width 188px
+      font-size 32px
+      vertical-align middle
+    }
+    .address-btnSelect {
+      font-size 32px
+      min-width 500px
+      display flex
+      box-sizing border-box
+      justify-content space-between
+    }
+    .address-ima {
+      wh(25px, 25px)
+    }
+    .picker {
+      font-size 32px
+    }
+  }
+  .address-address{
+    min-height 100px
+    padding 30px 30px 30px 30px
+    box-sizing border-box
+    align-items center
+    .address-select2 {
+      height 100%
+      min-width 188px
+      font-size 32px
+      vertical-align middle
+    }
+    .address-address-box{
+      width 100%
+      font-size 32px
+      min-width 509px
+      border-top:0PX #d6e4ef solid!important;
+      border-bottom:0PX #d6e4ef solid!important;
+      border-right:0PX #d6e4ef solid!important;
+      border-left:0PX #d6e4ef solid!important;
+    }
+  }
+
+  .switch {
+    max-height 100px
+    padding-left 30px
+    overflow hidden
+    display flex
+    height 100px
+    justify-content space-between
+    border-bottom 1px solid #EFEFEF
+    align-items center
+    .switch1 {
+      font-size 32px
+    }
+  }
+  .picker-style {
+    color #ccc
+  }
+  .btn-save {
+    wh(600px, 85px)
+    background $color-yellow
+    border-radius 20px
+    color #fff
+    font-size 38px
+    line-height 85px
+    text-align center
+    margin 88px auto
+  }
+}

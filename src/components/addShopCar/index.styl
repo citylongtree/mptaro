@@ -1,0 +1,100 @@
+@import "../../styles/mixin.styl"
+.addShopCar{
+  padding 0 24px
+  position relative
+  .top-info{
+    margin 10px 0
+    display flex
+    &-img{
+      wh(180px,180px)
+      &-url{
+        wh(180px,180px)
+      }
+    }
+    &-pName{
+      display flex
+      flex-direction column-reverse
+      justify-content end
+      margin-left 60px
+      .price{
+        color #FF6000
+        font-size 32px
+        margin-bottom 5px
+      }
+      .name{
+        color #919191
+        font-size 26px
+      }
+    }
+  }
+  .sku-title{
+    color #343434
+    font-size 28px
+    margin 40px 0 30px 10px
+  }
+  .sku-list{
+    &-item{
+      font-size 26px
+      color #343434
+      padding 0 34px
+      hl(54px,54px)
+      background:rgba(246,246,246,1);
+      display inline-block
+      border-radius 34px
+      margin 10px
+    }
+    &-scroll-view{
+      max-height 370px
+    }
+    .active{
+      color #ffffff
+      background: $color-primary
+    }
+  }
+  .goodCnt{
+    margin-top 20px
+    border-top 1px solid #E1E1E1FF
+    padding-top 50px
+    &-text{
+      color $color-black
+      font-size 28px
+      padding-top 15px
+    }
+  }
+  .btn{
+    position absolute;
+    bottom 30px;
+    left 25px
+    &-sure{
+      width 700px
+      hl(82px,82px)
+      background: #FF6100FF
+      text-align center
+      color #ffffff
+      font-size 32px
+      border-radius 41px
+    }
+    &-group{
+      width 700px
+      .add,.buy{
+        width 50%
+        display inline-block
+        hl(82px,82px)
+        font-size 32px
+        color #ffffff
+        text-align center
+      }
+      .add{
+        background: $color-primary
+        border-top-left-radius: 44px
+        border-bottom-left-radius: 44px
+      }
+      .buy{
+        background: #FF6100
+        color $color-white
+        border-top-right-radius: 44px
+        border-bottom-right-radius: 44px
+      }
+    }
+  }
+}

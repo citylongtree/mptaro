@@ -1,0 +1,43 @@
+@import "../../styles/mixin.styl"
+.search-nohistory{
+  width 100%
+  font-size 28px
+  color rgba(102,102,102,1)
+  text-align center
+  .tips{
+    width 80%;
+    margin 0 auto
+    white-space wrap
+  }
+  .search-nohistory-img{
+    wh(394px,192px)
+    margin 160px  auto 60px
+  }
+  .openView {
+    width 100%
+    .openText{
+      display block
+      width 100%
+      font-size $font-size-4
+      line-height 40px
+      color #666666
+      text-align center
+    }
+    .openLocation {
+      wh(213px, 72px)
+      border 1px solid #212121
+      color #212121
+      line-height 72px
+      font-size 30px
+      text-align center
+      border-radius 36px
+      background-color #ffbd1a
+      &:after{
+        display none
+      }
+      &:before{
+        display none
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@import '../../../styles/mixin.styl'
+
+.shop
+  display flex
+  flex-direction column
+  wh(100%, 100vh)
+  .hidden
+    display none
+  .search-header
+    wh(100%, 90px)
+    display flex
+    flex-direction row
+    align-items center
+    padding 0 25px
+    box-sizing border-box
+    .cityName
+      font-size $font-size-4
+      display inline-block
+      max-width: 170px
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+      padding 0 10px
+      box-sizing border-box
+    .select-city
+      display flex
+      justify-content space-between
+      width auto
+      height 100%
+      line-height 90px
+      color #343434
+    .hidden
+      display none
+  .search-value
+    .search::after, .search::before, .search:after, .search:before
+      display none
+    .at-search-bar__action
+      background-color #fff
+      color #A1A1A1
+    .at-search-bar__placeholder_wrap
+      -webkit-justify-content:left !important
+      justify-content:left !important
+  .sort-tab
+    wh(100%, 90px)
+  .history-box
+    flex 1
+  .hidden
+    display none!important
+  .shopList
+    display flex
+    flex 1
+    flex-direction column
+    .shopLi
+      wh(100%, 215px)
+      border-top 1px solid #EFEFEF
+      padding 34px 25px
+      box-sizing border-box
+      display flex
+      flex-direction row
+      .shopImg
+        display block
+        wh(160px, 146px)
+        border-radius 10px
+        overflow hidden
+      .shopDesc
+        wh(390px, 100%)
+        display flex
+        flex-direction column
+        justify-content space-between
+        padding-left 27px
+        .shop-name
+          width 356px
+          line-height 38px
+          font-size $font-size-2
+          color #343434
+        .shop-address
+          width 356px
+          font-size $font-size-5
+          color #838383
+      .distance
+        display flex
+        flex-direction column
+        justify-content space-between
+        flex 1
+        .distanceText
+          font-size $font-size-5
+          color #838383
+          display flex
+          flex-direction row
+        .goShop
+          align-self flex-end
+          display inline-block
+          wh(98px, 45px)
+          line-height 45px
+          border 1px solid #FF7700
+          border-radius 22.5px
+          overflow hidden
+          color #FF7700
+          text-align center
+          font-size $font-size-4
+

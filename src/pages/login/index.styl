@@ -1,0 +1,48 @@
+@import "../../styles/mixin.styl"
+.login-main
+  wh(100%, 100vh)
+  display flex
+  flex-direction column
+  .top-img
+    wh(100%, auto)
+    display flex
+    flex-direction row
+    align-content center
+    box-sizing border-box
+    padding 30px 0 100px
+    Image
+      wh(222px, 90px)
+      margin: 0 auto
+  .login-input
+    wh(563px, auto)
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding 70px 0 10px
+    box-sizing border-box
+    border-bottom 1px solid #CDCDCD
+    margin 0 auto
+    .inputLogin
+      flex 1
+      display inline-block
+      height 50px
+      font-size $font-size-4
+    Text
+      display inline-block
+      padding 0 20px
+      line-height 50px
+      font-size $font-size-5
+      color #999999
+      border 1px solid #999999
+      border-radius 25px
+      text-align center
+  .login-btn
+    wh(560px, 87px)
+    background-color #D0D3DA
+    color #fff
+    font-size $font-size-1
+    font-weight bold
+    text-align center
+    line-height 87px
+    margin: 90px auto 0
+    border-radius 44px

@@ -1,0 +1,201 @@
+@import "../../styles/mixin.styl"
+.writeOrder
+  display flex
+  flex-direction column
+  width 100%
+  height 100vh
+  .line
+    border-bottom 1px solid #EFEFEF
+  .marginBottom
+    margin-bottom 16px
+  .main
+    width 100%
+    flex 1
+    overflow-y scroll
+    box-sizing border-box
+    background-color #f5f5f5
+    .pickUp
+      height auto
+      font-size $font-size-4
+      display flex
+      flex-direction column
+      .typeLi
+        font-size $font-size-4
+        padding-right 25px
+        box-sizing border-box
+        .item-extra__info
+          font-size $font-size-4
+      .goShop-input
+        display flex
+        flex-direction row
+        wh(100%, 106px)
+        padding 0 25px
+        box-sizing border-box
+        background-color #fff
+        line-height 106px
+        font-size $font-size-4
+        color #343434
+        align-content center
+        &-label
+          wh(162px, 100%)
+        &-content
+          flex 1
+          align-self center
+          padding-right 30px
+          box-sizing border-box
+        .icon-edit
+          align-self center
+          display block
+          width 30px
+          height 30px
+    .goods-list
+      wh(100%, auto)
+      display flex
+      flex-direction column
+      background-color #fff
+      margin-top 15px
+      .shopName
+        wh(466px, 70px)
+        padding 0 24px
+        line-height 70px
+        font-size $font-size-4
+        color #343434
+      .goods-item
+        wh(100%, 200px)
+        padding 24px
+        box-sizing border-box
+        display flex
+        flex-direction row
+        justify-content space-between
+        background #FAFAFA
+        &-img
+          wh(126px, 126px)
+          overflow hidden
+          Image
+            display block
+            wh(100%, 100%)
+        &-desc
+          width 535px
+          height 100%
+          display flex
+          flex-direction column
+          .goods-item-goodsName
+            wh(100%, 62px)
+            line-height 31px
+            font-size $font-size-4
+            color #303030
+          .goods-item-goodsSku
+            height 55px
+            line-height 66px
+            font-size $font-size-5
+            color #A2A2A2
+          .goods-desc-bottom
+            display flex
+            flex-direction row
+            justify-content space-between
+            .goods-item-price
+              font-size $font-size-4
+              color #ED6C00
+            .goods-item-goodsCnt
+              font-size $font-size-4
+              color #5A5A5A
+    .main-bottom
+      width 100%
+      .main-bottom-list
+        wh(100%, 106px)
+        display flex
+        flex-direction row
+        justify-content space-between
+        padding 0 24px
+        box-sizing border-box
+        color #343434
+        font-size $font-size-4
+        line-height 106px
+        background-color #fff
+        .rightIcon
+          margin-right -20px
+        .left-label
+          display inline-block
+          width 150px
+        .remark
+          display inline-block
+          align-self center
+          text-align right
+        .main-bottom-list-right
+          color: #999898
+        .iconWeiXin
+          display inline-block
+          width 45px
+          height 100%
+          padding-right 20px
+          Image
+            wh(45px, 37px)
+  .placeOrder
+    width 100%
+    height 100px
+    display flex
+    flex-direction row
+    color: #343434
+    font-size $font-size-4
+    justify-content flex-end
+    line-height 100px
+    .count-cnt
+      line-height 100px
+      padding-right 20px
+    .payMoney
+      color #FE7200
+      font-size $font-size-1
+    .place-btn
+      display inline-block
+      wh(220px, 100%)
+      background-color #FE7200
+      color #fff
+      font-size $font-size-2
+      text-align center
+  .express
+    wh(100%, auto)
+    .icon-right
+      wh(20px, 30px)
+    .selectAddress
+      wh(100%, 94px)
+      display flex
+      flex-direction row
+      justify-content space-between
+      padding 0 0 0 25px
+      box-sizing border-box
+      line-height 94px
+      background-color #fff
+      &-title
+        font-size $font-size-4
+      &-right
+        color #999898
+        line-height 94px
+        font-size $font-size-4
+    .addressMessage
+      color #343434
+      font-size $font-size-4
+      display flex
+      flex-direction column
+      padding 10px 25px
+      box-sizing border-box
+      background-color #fff
+      overflow-x hidden
+      &-top
+        display flex
+        flex-direction row
+        justify-content space-between
+        line-height 76px
+        .userName
+          display inline-block
+          max-width 495px
+      &-bottom
+        display flex
+        flex-direction row
+        justify-content space-between
+        .rightIcon
+          margin-right -22px
+        .addressMessage-address
+          line-height 35px
+          width 640px
+          max-height 70px
+

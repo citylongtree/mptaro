@@ -1,0 +1,88 @@
+@import "../../../styles/mixin.styl"
+.goods-handle-getTicket{
+  padding 24px
+  font-size 30px
+  color $color-black
+  .icon{
+    float right!important
+  }
+}
+.getTicket{
+  .title{
+    font-size:38px;
+    font-weight:bold;
+    text-align center
+    hl(80px,80px)
+    color:rgba(50,50,50,1);
+  }
+  &-list{
+    max-height calc(75vh)
+    padding 15px
+    &-item{
+      height 150px
+      position relative
+      margin 25px 0
+      display flex
+      &-left{
+        background: url("https://m.hanguda.com/img/coupon/disCoupon.png")
+        padding-top 17px
+        width 570px
+        background-size 570px
+        text-align center
+        display flex
+        flex-wrap wrap
+        align-items center
+        color #fff
+        .flex1{
+          width 190px
+        }
+        .flex2{
+          width 380px
+        }
+        .money,.name{
+          height 80px
+          line-height 80px
+          font-size 38px
+        }
+        .money{
+          font-size 58px
+          .text{
+            position relative
+            &:after{
+              content '￥'
+              position absolute
+              bottom: -30x
+              left -20px
+              font-size 24px
+              color #fff
+            }
+          }
+        }
+        .limit,.useTime{
+          height 60px
+          font-size 20px
+        }
+      }
+      &-right{
+        background url("https://m.hanguda.com/img/coupon/disCouponR.png")
+        width 106px
+        background-size 106px
+        writing-mode: vertical-lr;
+        text-align center
+        font-size 32px
+        color #fff
+        line-height 106px
+      }
+    }
+    &-item-active{
+      .getTicket-list-item-left{
+        background: url("https://m.hanguda.com/img/coupon/coupon.png")
+        background-size 570px
+      }
+      .getTicket-list-item-right{
+        background url("https://m.hanguda.com/img/coupon/couponR.png")
+        background-size 106px
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../styles/mixin.styl'
+.picker-box
+  wh(100%, 100vh)
+  position fixed
+  top 0
+  left 0
+  background rgba(0,0,0,.7)
+  z-index 100
+  .picker-main
+    display flex
+    flex-direction column
+    wh(100%, auto)
+    max-height 860px
+    position absolute
+    bottom 0
+    left 0
+    background-color #fff
+    padding-bottom 80px
+    box-sizing border-box
+    .line
+      border-bottom 1px solid #D6D6D6
+    &-title
+      wh(100%, 114px)
+      text-align center
+      line-height 114px
+      font-size $font-size-1
+    &-list
+      wh(100%, auto)
+      display flex
+      flex-direction column
+      &-item
+        width 100%
+        height 88px
+        padding 0 25px
+        line-height 88px
+        box-sizing border-box
+        display flex
+        flex-direction row
+        align-content center
+        .picker-item-name
+          flex 1
+          line-height 88px
+          font-size $font-size-2
+          color #212121
+        .picker-item-active-img
+          wh(36px, 36px)
+          align-self center
+        .picker-item-left
+          flex 1
+          font-size $font-size-2
+          color #212121
+          display flex
+          flex-direction column
+          &-name
+            width 100%
+            line-height 50px
+          &-Time
+            line-height 38px
+            font-size $font-size-5
+

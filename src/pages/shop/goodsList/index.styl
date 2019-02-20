@@ -1,0 +1,86 @@
+@import "../../../styles/mixin.styl"
+.goods-main
+  display flex
+  flex-direction column
+  wh(100%, 100vh)
+  .goods-classify
+    wh(100%, 80px)
+    display flex
+    flex-direction row
+    padding 0 80px
+    box-sizing border-box
+    justify-content center
+    border-bottom 1px solid #EFEFEF
+    position relative
+    .classify-item
+      flex 1
+      text-align center
+      line-height 80px
+      color #838383
+      font-size $font-size-5
+    .box-style
+      width 100%
+      height calc(100vh - 140px)
+      background rgba(0,0,0,.5)
+      z-index 5
+      position absolute
+      left 0
+      top 80px
+      .classify-list
+        background #fff
+        max-height 760px
+        width 100%
+        height auto
+        overflow-y scroll
+        .classify-list-item
+          width 100%
+          height 76px
+          line-height 76px
+          border-bottom 1px solid #EFEFEF
+          box-sizing border-box
+          color #959595
+          font-size $font-size-5
+          padding 0 40px
+          display flex
+          justify-content space-between
+          Text
+            display inline-block
+            flex 1
+  .goods-list
+    flex 1
+    width 100%
+    display flex
+    flex-direction row
+    .goods-left
+      width 180px
+      height 100%
+      display flex
+      flex-direction column
+      background-color #eee
+      .classify-items
+        display inline-block
+        width 100%
+        height 100px
+        line-height 100px
+        font-size $font-size-5
+        color #313131
+        box-sizing border-box
+        text-align center
+        border-left 6px solid #eee
+        background-color #eee
+        .hot
+          display inline-block
+          width 25px
+          height 25px
+          background url("../../../imgs/shop/icon-hot.png") no-repeat center
+          background-size 18px 21px
+      .classify-active
+        border-left 6px solid #FF4E00
+        background-color #fff
+    .goods-right
+      flex 1
+      width 100%
+      .goods-item-box
+        padding 20px 30px 20px 20px
+        box-sizing border-box
+        border-bottom 1px solid #EFEFEF

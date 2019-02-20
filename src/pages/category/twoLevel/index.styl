@@ -1,0 +1,61 @@
+@import "./../../../styles/mixin.styl"
+$font-color = #FF7915
+.two-level {
+  margin-bottom 10px
+  .two-level-content{
+    padding-left 20px
+    padding-right 25px
+    box-sizing border-box
+    border-top 1px solid #E8E8E8
+  }
+  .two-level-content:first-child {
+    border-top 0px solid #fff
+  }
+  .two-level-top{
+    display flex
+    align-items center
+    line-height 110px
+    justify-content space-between
+    font-size 26px
+    font-weight bold
+    color rgba(52,52,52,1)
+    .two-level-right{
+      wh(15px, 28px)
+    }
+  }
+  .two-level-bottom{
+    display flex
+    width 100%
+    flex-direction row
+    flex-wrap wrap
+    font-size 24px
+    font-weight 400
+    color rgba(49,49,49,1)
+    .threeName{
+      width 100%
+      text-align center
+    }
+    .three-level{
+      width 33.3333333%
+      height 160px
+    }
+    .three-level:nth-child(3n+3){
+      margin-right 0px
+    }
+    .three-level-box{
+      width 100%
+      display flex
+      justify-content space-between
+    }
+    .three-level-img{
+      margin 0 auto
+      wh(94px, 94px)
+    }
+    .three-level-bottom{
+      wh(100%,65px)
+      line-height 65px
+      text-align center
+    }
+  }
+}
+

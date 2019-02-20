@@ -1,0 +1,120 @@
+@import '../../../styles/mixin.styl'
+.TabClassify
+  display flex
+  wh(100%, 87px)
+  flex-direction row
+  box-sizing border-box
+  border-bottom 1px solid #E1E1E1
+  position relative
+  .modalShow{
+    text-align center
+    height 400px
+    width 100%
+    font-size 28px
+    color rgba(145,145,145,1)
+    line-height 400px
+  }
+  .line
+    border-top 1px solid #EFEFEF
+  .tabItem
+    flex 1
+    height 100%
+    line-height 86px
+    font-size $font-size-4
+    color #919191
+    text-align center
+    .tabItem-icon
+      display inline-block
+      wh(20px, 12px)
+
+
+  .tabClass-box
+    width 100%
+    height calc(100vh - 195px)
+    position absolute
+    top 86px
+    left 0
+    background-color rgba(0,0,0,.5)
+    z-index 200
+    .alert-content
+      width 100%
+      height auto
+      max-height 860px
+      background-color #fff
+      display flex
+      flex-direction column
+      .sort-Item
+        display flex
+        flex-direction row
+        justify-content space-between
+        padding 0 40px
+        height 88px
+        color #959595
+        font-size $font-size-4
+        line-height 88px
+    .classify-content
+      display flex
+      flex-direction row
+      .classify-left
+        width 180px
+        height 860px
+        background-color #EEEEEE
+        font-size $font-size-5
+        color #313131
+        &-item
+          wh(100%, 100px)
+          border-left 6px solid #EEEEEE
+          text-align center
+          line-height 100px
+        &-active
+          border-left 6px solid #FF4E00
+          background-color #fff
+      .classify-right
+        flex 1
+        padding-left 60px
+        height 860px
+        box-sizing border-box
+        font-size $font-size-5
+        display flex
+        flex-direction column
+        &-item
+          display inline-block
+          width 400px
+          height 80px
+          line-height 80px
+          color #313131
+    .brand-list-content {
+      width 100%
+      max-height 860px
+      .brand-list-box {
+        wh(100%, 106px)
+        display flex
+        flex-direction row
+        align-items center
+        font-size 28px
+        color rgba(33, 33, 33, 1)
+        border-bottom 1px solid rgba(234, 234, 234, 1)
+        .brand-list-left {
+          wh(90px, auto)
+          min-width 90px
+          text-align center
+          align-self center
+          color $color-yellow
+        }
+      }
+      .brand-list-box:last-child {
+        border-bottom 0 solid rgba(234, 234, 234, 1)
+      }
+      .brand-list-imgbox {
+        wh(96px,96px)
+        margin-right 41px
+        .brand-list-img {
+          wh(100%, 100%)
+        }
+      }
+      .brand-list-box1 {
+        width 100%
+        border-bottom 1px solid rgba(234, 234, 234, 1)
+      }
+    }
+

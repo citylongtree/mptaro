@@ -1,0 +1,46 @@
+@import "../../../styles/mixin.styl"
+.title-top {
+  wh(100%, 111px)
+  align-items center
+  text-align right
+  box-sizing border-box
+  padding-left 130px
+  .title-box {
+    text-align right
+    margin 0 auto
+    flex-direction row
+    .title-font {
+      font-family 'Microsoft YaHei'
+      font-weight 500
+      font-size 38px
+      letter-spacing 8px
+      background linear-gradient(to right, #FF5E54, #FF6DA8, #FF5E54, #FF8C3E)
+      -webkit-background-clip text
+      color transparent
+    }
+    .title-img {
+      wh(74px,24px)
+      padding 0 14px
+    }
+  }
+  .title-box-right {
+    padding-right 25px
+    display flex
+    justify-content flex-end
+    align-items center
+    &.hidden{
+      visibility hidden
+    }
+    .title-fontS {
+      font-size 26px
+      color #727272
+      letter-spacing 5px
+      vertical middle
+    }
+    .title-imgS {
+      wh(26px,26px)
+      margin-left 8px
+      vertical middle
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../styles/mixin.styl"
+$box-height = 100px
+.catetory-page
+  height 100vh
+  .goodsSearch{
+    position fixed
+    top 0
+    left: 0
+    height 100px
+    z-index 999
+  }
+.catetory {
+  $search-width = 680px
+  padding-top 100px
+  display flex
+  height: 100%
+  box-sizing border-box
+  flex-direction row
+  .classify-box {
+    height 100%
+    width 180px
+    min-width 180px
+  }
+  .catetory-right{
+    height 100%
+    overflow-y scroll
+  }
+  .category-img{
+    margin-left 20px
+    margin-right 25px
+    width 526px
+    height 178px
+  }
+}

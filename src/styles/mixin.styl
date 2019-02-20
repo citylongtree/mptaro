@@ -1,0 +1,102 @@
+
+
+// 颜色变量
+$color-primary = #FFB500
+$color-red = #DD3946
+$color-disabled = #cccccc
+$color-black = #343434
+$color-gray = #E5E5E5
+$color-white = #ffffff
+$color-yellow = #FF7700
+
+$color-bg-primary = #f0f0f0
+
+// 字体系列
+$font-family = "PingFang-SC-Medium", "Source Han Sans", "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", sans-serif
+// 字体大小
+$font-size-1 = 34px
+$font-size-2 = 32px
+$font-size-3 = 30px
+$font-size-4 = 28px
+$font-size-5 = 26px
+$font-size-6 = 24px
+
+$border-radius = 15px
+
+$zindex-base = 500
+$zindex-lower = 100
+$zindex-higher = 550
+
+
+$box-height = 100px
+
+
+$baseUrl = 'https://hanguda.com/mnt/tosend/mp/'
+
+wh(w,h){
+  width w
+  height h
+}
+
+hl(h,l){
+  height h
+  line-height l
+}
+
+.clear {
+  zoom: 1;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.fl{
+  float left
+}
+.fr{
+  float right
+}
+
+
+//取消按钮
+.search-btn {
+  margin-top 20px
+  margin-left -10px
+  width $search-width
+  .at-search-bar__action {
+    background-color #fff
+    color #A1A1A1
+  }
+}
+
+//flex布局
+.flex-items{
+  display flex
+  flex-wrap wrap
+}
+
+.border-b1{
+  border-bottom 1px solid #E1E1E1
+}
+// 单行超出隐藏(加上width)
+.text-ellipsis1{
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+}
+// 两行超出隐藏
+.text-ellipsis2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical;
+}
+
+//原生按钮 去掉边框
+
+button::after{ border: none; }
+
+
+
